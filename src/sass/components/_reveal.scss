@@ -1,0 +1,25 @@
+.reveal-content{
+    height: 88px;
+    overflow-y: hidden;
+}
+
+.reveal-header{
+    cursor: pointer;
+
+    svg{
+        float: right;
+        transform: rotate(-90deg);
+        pointer-events: none;
+        transition: all 200ms ease;
+    }
+
+    &.active{
+        svg{
+            transform: rotate(0deg);
+        }
+
+        & + .reveal-content{
+            height: 100%;
+        }
+    }
+}

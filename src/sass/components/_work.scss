@@ -1,0 +1,69 @@
+.work{
+    padding-top: 70px;
+
+    .title{
+        font-weight: 900;
+    }
+
+    .swipe{
+        background-image: url(/assets/images/swipe.svg);
+        background-size: 36px;
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+
+    .hooper{
+        &:focus,
+        &:active{
+            outline: none !important;
+        }
+    }
+
+    .work-wrapper{
+        position: relative;
+        margin-bottom: 50px;
+    }
+
+    .bottom-carousel{
+        .hooper {
+            height: 300px;
+        }
+    }
+
+    .top-carousel {
+        pointer-events: none;
+        position: absolute;
+        top: -185px;
+        left: -10px;
+
+        .hooper {
+            height: 220px;
+            overflow: hidden;
+        }
+    }
+
+    img{
+        width: calc(100% - 60px);
+        opacity: 0.7;
+        transition: opacity 200ms;
+        margin-left: 60px;
+        &:hover{
+            opacity: 1;
+        }
+    }
+
+    .slide-item {
+        background: none;
+        overflow: hidden;
+    }
+
+    .number{
+        font-weight: 500;
+        font-size: 210px;
+        opacity: 0.4;
+    }
+}
+
+
+
+

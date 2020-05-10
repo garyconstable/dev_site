@@ -1,0 +1,23 @@
+.skills{
+    h4{
+        border-bottom: solid 1px white;
+        position: relative;
+
+        &:after{
+            content: "Development";
+            font-size: 10px;
+            opacity: 0.7;
+            position: absolute;
+            top: 5px;
+            left: 0;
+        }
+    }
+
+    .skills-item{
+        font-size: 10px;
+
+        h3{
+            font-size: 16px;
+        }
+    }
+}

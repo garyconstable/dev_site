@@ -1,0 +1,18 @@
+@import "~bootstrap/scss/bootstrap";
+
+/** Partials **/
+@import "partials/variables";
+@import "partials/fonts";
+@import "partials/body";
+@import "partials/spacing";
+
+/** Components **/
+@import "components/footer";
+@import "components/history";
+@import "components/links";
+@import "components/main";
+@import "components/reveal";
+@import "components/sidebar";
+@import "components/skills";
+@import "components/work";
+

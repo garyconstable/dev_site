@@ -1,0 +1,21 @@
+
+.history-item{
+
+    .title{
+        font-size: 16px;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+
+    .date{
+        font-size: 12px;
+        font-weight: 100;
+        text-transform: uppercase;
+    }
+
+    .description{
+        //font-size: 16px;
+        font-weight: normal;
+        color: darken(white, 20%);
+    }
+}
