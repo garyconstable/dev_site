@@ -18,7 +18,10 @@
 }
 
 .work{
-    padding-top: 70px;
+    padding-top: 40px;
+    @include tablet{
+        padding-top: 70px;
+    }
 
     .title{
         font-weight: 900;
@@ -68,7 +71,7 @@
     .top-carousel {
         pointer-events: none;
         position: absolute;
-        top: -101px;
+        top: -98px;
         left: -10px;
 
         @include tablet {
@@ -93,10 +96,16 @@
     }
 
     img{
-        width: calc(100% - 60px);
+
+        width:100%;
         opacity: 0.7;
         transition: opacity 200ms;
-        margin-left: 60px;
+
+        @include tablet {
+            width: calc(100% - 60px);
+            margin-left: 60px;
+        }
+
         &:hover{
             opacity: 1;
         }

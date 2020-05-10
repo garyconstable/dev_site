@@ -1,5 +1,6 @@
-var path = require('path')
-var webpack = require('webpack')
+var path = require('path');
+var webpack = require('webpack');
+var version = 1;
 
 module.exports = {
   entry: [
@@ -9,7 +10,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, '../assets/dist'),
     publicPath: '/assets/dist/',
-    filename: 'js/dist.js'
+    filename: 'js/dist_' + version +'_.js'
   },
   module: {
     rules: [
@@ -20,7 +21,7 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: 'css/dist.css',
+              name: 'css/dist_' + version +'_.css',
             }
           },
           {

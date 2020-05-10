@@ -1,5 +1,5 @@
 <template>
-    <div class="mt-3 mt-md-5">
+    <div class="mt-5">
         <h4 class="bold-title display-4">History</h4>
         <div v-for="item in items" class="row history-item">
             <div class="col-lg-4 mt-3">
