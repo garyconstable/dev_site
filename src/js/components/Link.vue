@@ -1,7 +1,7 @@
 <template>
-    <div class="links-item mb-4">
+    <div class="links-item mb-2">
         <h3>
-            <a v-bind:href="href">{{title}}</a>
+            <a v-bind:href="href" target="_blank">{{title}}</a>
         </h3>
     </div>
 </template>

@@ -10,6 +10,7 @@ Vue.component('icon', FontAwesomeIcon);
 
 import Vue from 'vue'
 
+import Contact from './components/Contact';
 import Education from './components/Education';
 import MainFooter from './components/Footer';
 import History from './components/History';
@@ -22,6 +23,7 @@ import Skill from './components/Skill';
 import Skills from './components/Skills';
 import Work from './components/Work';
 
+Vue.component('Contact', Contact);
 Vue.component('Education', Education);
 Vue.component('MainFooter', MainFooter);
 Vue.component('History', History);

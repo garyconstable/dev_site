@@ -29,7 +29,8 @@
                     }
                 });
                 //event.target.nextElementSibling.classList.toggle('active')
-                event.target.classList.toggle('active')
+                event.target.classList.toggle('active');
+                window.dispatchEvent(new Event('scroll'));
             }
         }
     };

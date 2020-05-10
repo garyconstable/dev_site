@@ -1,0 +1,29 @@
+
+.circle-contact{
+    position: fixed;
+    top: 0;
+    right: -570px;
+    border-radius: 100%;
+    border: solid 41px #ffffff14;
+    width: 900px;
+    height: 900px;
+    z-index: 9;
+
+    .link{
+        position: fixed;
+        top: 41px;
+        right: -30px;
+        color: white;
+        background: black;
+        transform: rotate(90deg);
+        padding: 10px 20px;
+        font-weight: 100;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: color 300ms ease;
+
+        &:hover{
+            color: darken($white, 20%);
+        }
+    }
+}
