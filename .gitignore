@@ -9,3 +9,5 @@ yarn-error.log
 *.ntvs*
 *.njsproj
 *.sln
+assets/images/profile_images
+assets/images/profile_images_large

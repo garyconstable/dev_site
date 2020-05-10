@@ -1,12 +1,13 @@
 <template>
-    <div class="row mt-5">
+    <div class="row mt-3 mt-md-5">
         <div class="col-12 work">
             <h4 class="bold-title display-4 swipe">Work Examples</h4>
             <div class="work-wrapper">
                 <div class="top-carousel">
                     <hooper ref="topCarousel"
-                            :vertical="true"
                             :itemsToShow="1"
+                            :itemsToSlide="1"
+                            :vertical="true"
                             :centerMode="true"
                             :mouseDrag="false"
                             :touchDrag="false"

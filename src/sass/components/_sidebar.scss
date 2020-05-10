@@ -10,7 +10,7 @@
         text-transform: uppercase;
 
         span{
-            @media (min-width: 768px) {
+            @include tablet {
                 display: block;
             }
         }
@@ -18,7 +18,11 @@
 
     .name-title{
         font-weight: 900;
-        font-size: 2.0rem
+        font-size: 1.5rem;
+
+        @include tablet_wide {
+            font-size: 2.0rem
+        }
     }
 
     .list-inline{
@@ -37,8 +41,10 @@
     }
 
     .vue-affix{
-        @media (max-width: 767px) {
-            width: 100% !important;
+        width: 100% !important;
+
+        @include tablet{
+            width: unset !important;
         }
     }
 

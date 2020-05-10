@@ -1,12 +1,12 @@
 <template>
-    <div class="mt-5">
+    <div class="mt-3 mt-md-5">
         <h4 class="bold-title display-4">History</h4>
         <div v-for="item in items" class="row history-item">
-            <div class="col-md-4 mt-3">
+            <div class="col-lg-4 mt-3">
                 <h5 class="title">{{item.title}}</h5>
                 <p class="date">{{item.dateString}}</p>
             </div>
-            <div class="col-md-8 mt-3">
+            <div class="col-lg-8 mt-3">
                 <div class="description">
                     <p>{{item.description}}</p>
                 </div>

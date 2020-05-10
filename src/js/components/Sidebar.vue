@@ -8,20 +8,26 @@
                 <ul class="list-inline">
                     <li class="list-inline-item"><a
                             href="hmailto:garyconstable80@gmail.com"
-                    ><icon :icon="['fa', 'envelope-square']"></icon></a></li>
+                    >
+                        <icon :icon="['fa', 'envelope-square']"></icon>
+                    </a></li>
                     <li class="list-inline-item"><a
                             href="https://www.linkedin.com/in/gary-constable/"
                             target="_blank"
-                    ><icon :icon="['fab', 'linkedin']"></icon></a></li>
+                    >
+                        <icon :icon="['fab', 'linkedin']"></icon>
+                    </a></li>
                     <li class="list-inline-item"><a
                             href="https://github.com/garyconstable"
                             target="_blank"
-                    ><icon :icon="['fab', 'github-square']"></icon></a></li>
+                    >
+                        <icon :icon="['fab', 'github-square']"></icon>
+                    </a></li>
                 </ul>
                 <!-- section -->
-                <skills />
+                <skills/>
                 <!-- section -->
-                <links />
+                <links/>
             </div>
         </affix>
     </div>
@@ -35,9 +41,19 @@
 
     export default {
         data() {
-            return {
-
-            };
+            return {};
         },
+
+        created() {
+            window.addEventListener('resize', this.handleResize);
+
+            window.addEventListener("orientationchange", this.handleResize)
+        },
+
+        methods: {
+            handleResize(){
+                window.dispatchEvent(new Event('scroll'));
+            }
+        }
     };
 </script>
