@@ -1,6 +1,7 @@
 <template>
     <div class="circle-contact">
-        <a class="link" href="#" @click="show">Contact me</a>
+
+        <a class="link" @click="show">Contact me</a>
 
         <modal name="contact">
 
@@ -87,9 +88,11 @@
         methods:{
             show () {
                 this.$modal.show('contact');
+                return false;
             },
             hide () {
                 this.$modal.hide('contact');
+                return false;
             },
             submit(event) {
                 event.preventDefault();
@@ -111,7 +114,6 @@
                     _this.show_loading = false;
                 })
                 .catch(function (error) {
-                    console.log(error);
                     _this.show_loading = false;
                 });
             },

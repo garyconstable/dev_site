@@ -8,7 +8,7 @@
     <link rel="apple-touch-icon" href="icon.png">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/dist/css/dist_2_.css">
+    <link rel="stylesheet" href="/assets/dist/css/dist_3_.css">
 </head>
 <body>
     <div id="app">
@@ -21,6 +21,6 @@
         </div>
         <main-footer></main-footer>
     </div>
-    <script src="/assets/dist/js/dist_2_.js"></script>
+    <script src="/assets/dist/js/dist_3_.js"></script>
 </body>
 </html>
