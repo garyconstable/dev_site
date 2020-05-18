@@ -4,13 +4,19 @@
 
         <modal name="contact">
 
-            <form v-on:submit="submit"
+            <span @click="hide" class="modal-close">
+                <icon :icon="['fa', 'times-circle']"></icon>
+            </span>
 
+            <form v-on:submit="submit"
                     class="contact-form d-flex flex-column align-items-center"
                     action="/"
                     method="POST"
                     id="signup-form"
             >
+
+                <h1>Get in touch</h1>
+
                 <div class="form-group w-75">
                     <input
                             type="name"

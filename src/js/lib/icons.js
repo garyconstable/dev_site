@@ -5,7 +5,8 @@ import {
     faEnvelope,
     faEnvelopeSquare,
     faStar,
-    faCaretDown
+    faCaretDown,
+    faTimesCircle
 } from '@fortawesome/free-solid-svg-icons';
 
 import {
@@ -21,7 +22,8 @@ export default {
             faStar,
             faCaretDown,
             faLinkedin,
-            faGithubSquare
+            faGithubSquare,
+            faTimesCircle
         );
     },
 };

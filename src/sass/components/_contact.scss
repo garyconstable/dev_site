@@ -10,6 +10,15 @@
     z-index: 9;
     pointer-events: none;
 
+    .modal-close{
+        position: absolute;
+        right: 0;
+        top: 0;
+        color: white;
+        font-size: 40px;
+        cursor: pointer;
+    }
+
     .link{
         position: fixed;
         top: 41px;
@@ -18,7 +27,7 @@
         background: black;
         transform: rotate(90deg);
         padding: 10px 20px;
-        font-weight: 100;
+        font-weight: 400;
         text-transform: uppercase;
         text-decoration: none;
         transition: color 300ms ease;
@@ -31,12 +40,60 @@
 
     .vm--modal {
         color: $black;
-        min-height: 410px !important;
-        max-height: 100vh;
+        height: 100vh !important;
+        max-height:95vh !important;
         padding: 35px 0px 0 0;
-        max-width: 90%;
+        width: 100vw !important;
+        max-width: 95vw !important;
         left: 50% !important;
-        transform: translateX(-50%);
+        top: 50% !important;
+        transform: translateX(-50%) translateY(-50%);
+        background: #080c11;
+
+        form{
+            height: 100%;
+            justify-content: center;
+            max-width: 600px;
+            margin: auto;
+
+
+            h1{
+                color: $white;
+                width: 75%;
+                margin-bottom: 10px;
+                font-weight: 900;
+            }
+
+            ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+                text-transform: uppercase;
+            }
+            ::-moz-placeholder { /* Firefox 19+ */
+                text-transform: uppercase;
+            }
+            :-ms-input-placeholder { /* IE 10+ */
+                text-transform: uppercase;
+            }
+            :-moz-placeholder { /* Firefox 18- */
+                text-transform: uppercase;
+            }
+
+
+            .btn-info{
+                background: $grey;
+                border: solid 1px $grey;
+                text-transform: uppercase;
+
+                &:hover{
+                    background: darken($grey, 50%);
+                    border: solid 1px $white;
+                }
+            }
+
+        }
+    }
+
+    .vm--overlay{
+        background: rgba(0, 0, 0, 0.95);
     }
 
     .vm--container{

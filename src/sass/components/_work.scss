@@ -102,8 +102,8 @@
         transition: opacity 200ms;
 
         @include tablet {
-            width: calc(100% - 60px);
-            margin-left: 60px;
+            //width: calc(100% - 60px);
+            //margin-left: 60px;
         }
 
         &:hover{
@@ -129,7 +129,3 @@
         }
     }
 }
-
-
-
-
