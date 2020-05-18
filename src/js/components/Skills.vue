@@ -9,7 +9,6 @@
                 <skill title="Craft CMS" stars="4" />
                 <skill title="Magento 2" stars="4" />
                 <skill title="Apache" stars="4" />
-                <skill title="Nginx" stars="2" />
                 <skill title="Linux" stars="3" />
             </template>
         </reveal>

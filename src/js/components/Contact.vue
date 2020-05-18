@@ -8,7 +8,8 @@
                 <icon :icon="['fa', 'times-circle']"></icon>
             </span>
 
-            <form v-on:submit="submit"
+            <form v-if="show_thanks == false"
+                  v-on:submit="submit"
                     class="contact-form d-flex flex-column align-items-center"
                     action="/"
                     method="POST"
@@ -23,6 +24,7 @@
                             class="form-control"
                             placeholder="Name"
                             name="name"
+                            v-model="name"
                             required
                     />
                 </div>
@@ -32,6 +34,7 @@
                             class="form-control"
                             placeholder="Email"
                             name="name"
+                            v-model="email"
                             required
                     />
                 </div>
@@ -43,27 +46,43 @@
                       placeholder="Message"
                       rows="7"
                       name="name"
+                      v-model="message"
                       required
               ></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-submit btn-info w-75">Submit</button>
+                <button type="submit" class="btn btn-submit btn-info w-75">
+                    Submit
+                    <img src="/assets/images/ajax-loader.gif" v-if="show_loading == true" />
+                </button>
             </form>
 
-
+            <div v-if="show_thanks == true"
+                 class="contact-thanks">
+                <form>
+                    <div class="form-group w-75">
+                        <h3 style="color:white">Thanks</h3>
+                        <p>I will be in contact soon, if you have asked me to do so.</p>
+                    </div>
+                </form>
+            </div>
 
         </modal>
-
     </div>
 </template>
 
 <script>
     export default {
 
-        // mounted() {
-        //     const signupForm = document.getElementById('signup-form');
-        //     signupForm.addEventListener('submit', this.processSignupForm()) ;
-        // },
+        data() {
+            return {
+                name: "",
+                email: "",
+                message: "",
+                show_thanks: false,
+                show_loading: false
+            };
+        },
 
         methods:{
             show () {
@@ -74,18 +93,27 @@
             },
             submit(event) {
                 event.preventDefault();
-                console.log('submit');
 
-                /*
-                this.errors = {};
-                axios.post('/submit', this.fields).then(response => {
-                    alert('Message sent!');
-                }).catch(error => {
-                    if (error.response.status === 422) {
-                        this.errors = error.response.data.errors || {};
+                let _this = this;
+                let data = new FormData();
+
+                _this.show_loading = true;
+
+                data.append('name', this.name);
+                data.append('email', this.email);
+                data.append('message', this.message);
+
+                axios.post('/mail.php', data)
+                .then(function (response) {
+                    if(typeof response.data.success != "undefined" && response.data.success == true){
+                        _this.show_thanks = true;
                     }
+                    _this.show_loading = false;
+                })
+                .catch(function (error) {
+                    console.log(error);
+                    _this.show_loading = false;
                 });
-                */
             },
         }
     };

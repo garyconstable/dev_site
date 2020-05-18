@@ -1,6 +1,9 @@
 
 import Vue from 'vue'
 
+/**** Axios ****/
+window.axios = require('axios').default;
+
 /**** Font awesome ****/
 
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
