@@ -1,6 +1,6 @@
 var path = require('path');
 var webpack = require('webpack');
-var version = 1;
+var version = 2;
 
 module.exports = {
   entry: [
