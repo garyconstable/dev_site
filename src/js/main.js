@@ -1,4 +1,6 @@
 
+import Vue from 'vue'
+
 /**** Font awesome ****/
 
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
@@ -6,10 +8,11 @@ import icons from './lib/icons'
 icons.register();
 Vue.component('icon', FontAwesomeIcon);
 
+/**** Vue Modal ****/
+import VModal from 'vue-js-modal'
+Vue.use(VModal)
+
 /**** Vue Comps ****/
-
-import Vue from 'vue'
-
 import Contact from './components/Contact';
 import Education from './components/Education';
 import MainFooter from './components/Footer';

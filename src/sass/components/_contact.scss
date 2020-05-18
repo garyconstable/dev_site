@@ -28,4 +28,18 @@
             color: darken($white, 20%);
         }
     }
+
+    .vm--modal {
+        color: $black;
+        min-height: 410px !important;
+        max-height: 100vh;
+        padding: 35px 0px 0 0;
+        max-width: 90%;
+        left: 50% !important;
+        transform: translateX(-50%);
+    }
+
+    .vm--container{
+        pointer-events: all;
+    }
 }
