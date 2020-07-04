@@ -1,4 +1,4 @@
-<!doctype html>
+<?php $version=6;?><!doctype html>
 <html class="no-js" lang="">
 <head>
     <meta charset="utf-8">
@@ -8,7 +8,7 @@
     <link rel="apple-touch-icon" href="icon.png">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/dist/css/dist_5_.css">
+    <link rel="stylesheet" href="/assets/dist/css/dist_<?=$version;?>_.css">
 </head>
 <body>
     <div id="app">
@@ -21,6 +21,6 @@
         </div>
         <main-footer></main-footer>
     </div>
-    <script src="/assets/dist/js/dist_5_.js"></script>
+    <script src="/assets/dist/js/dist_<?=$version;?>_.js"></script>
 </body>
 </html>

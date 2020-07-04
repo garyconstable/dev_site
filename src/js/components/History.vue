@@ -22,12 +22,12 @@
                 items: [
                     {
                         title: 'Magento 2 Developer, Pixie Media',
-                        dateString: 'Jul 2019 — Present',
+                        dateString: 'Feb 2020 — Present',
                         description: 'I build themes, extensions and customise a number of Magento stores.'
                     },
                     {
-                        title: 'Laravel Developer, Optix Solutions',
-                        dateString: 'Jul 2019 — Present',
+                        title: 'Laravel Developer, Optix Solutions (Contract)',
+                        dateString: 'Jul 2019 — Feb 2020',
                         description: 'I currently develop Websites and Web Applications using Laravel & Vue.js while maintaining legacy php systems.'
                     },
                     {
