@@ -21,15 +21,20 @@
             return {
                 items: [
                     {
+                        title: 'Magento 2 Developer, Pixie Media',
+                        dateString: 'Jul 2019 — Present',
+                        description: 'I build themes, extensions and customise a number of Magento stores.'
+                    },
+                    {
                         title: 'Laravel Developer, Optix Solutions',
                         dateString: 'Jul 2019 — Present',
                         description: 'I currently develop Websites and Web Applications using Laravel & Vue.js while maintaining legacy php systems.'
                     },
                     {
-                        title: 'PHP Web Developer, Kodal',
+                        title: 'Magento 2 Developer, Kodal',
                         dateString: 'Nov 2018 — Jul 2019',
                         description: 'Duties Include PHP development using:\n' +
-                            '+ Magento 2 + Craft CMS + Symfony 4 + PHP\n' +
+                            '+ Magento 2 + Craft CMS\n' +
                             '+ Python Scripting + HTML & CSS\n' +
                             '+ jQuery & VueJs'
                     },

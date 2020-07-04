@@ -86,12 +86,20 @@
         },
 
         methods:{
+            reset(){
+                this.name = "";
+                this.email = "";
+                this.message = "";
+                this.show_thanks = false;
+                this.show_loading = false;
+            },
             show () {
                 this.$modal.show('contact');
                 return false;
             },
             hide () {
                 this.$modal.hide('contact');
+                this.reset();
                 return false;
             },
             submit(event) {
