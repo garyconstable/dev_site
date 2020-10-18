@@ -32,7 +32,10 @@
           >
             <slide v-for="item in items" :key="item.idx">
               <div class="slide-item">
-                <img v-bind:src="item.image" />
+                <img
+                  v-bind:src="item.image"
+                  v-bind:alt="'Image of ' + item.description"
+                />
                 <div class="description" v-if="item.description.length">
                   {{ item.description }}
                 </div>
