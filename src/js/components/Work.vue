@@ -68,7 +68,7 @@ export default {
 
         {
           idx: 1,
-          image: "/assets/images/profile_images_large/0001.png",
+          image: "/assets/images/profile_images/0001.png",
           description: "Shopify Theme Development"
         },
 
