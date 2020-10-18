@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: http://garyconstable.dev/sitemap.xml
+Sitemap: https://garyconstable.dev/sitemap.xml
