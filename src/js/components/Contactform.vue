@@ -72,10 +72,6 @@ export default {
     };
   },
 
-  created() {
-    console.log("---> running...");
-  },
-
   methods: {
     reset() {
       this.name = "";

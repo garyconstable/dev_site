@@ -1,7 +1,8 @@
-var path = require("path");
-var webpack = require("webpack");
 const VueLoaderPlugin = require("vue-loader/lib/plugin");
-var version = 7;
+const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
+const path = require("path");
+const webpack = require("webpack");
+const version = 8;
 
 module.exports = {
   entry: ["./js/main.js", "./sass/app.scss"],
@@ -81,7 +82,11 @@ module.exports = {
   performance: {
     hints: false
   },
-  devtool: "#eval-source-map"
+  devtool: "#eval-source-map",
+
+  optimization: {
+    minimizer: [new UglifyJsPlugin()]
+  }
 };
 
 module.exports.plugins = (module.exports.plugins || []).concat([
@@ -90,17 +95,10 @@ module.exports.plugins = (module.exports.plugins || []).concat([
 
 if (process.env.NODE_ENV === "production") {
   module.exports.devtool = "#source-map";
-  // http://vue-loader.vuejs.org/en/workflow/production.html
   module.exports.plugins = (module.exports.plugins || []).concat([
     new webpack.DefinePlugin({
       "process.env": {
         NODE_ENV: '"production"'
-      }
-    }),
-    new webpack.optimize.UglifyJsPlugin({
-      sourceMap: true,
-      compress: {
-        warnings: false
       }
     }),
     new webpack.LoaderOptionsPlugin({

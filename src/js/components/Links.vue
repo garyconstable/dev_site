@@ -4,10 +4,12 @@
       <template v-slot:content>
         <link-item title="Blake &amp; White" href="/blake" />
 
+        <!--
         <link-item
           title="Flyte So Fancy"
           href="http://flyteso.pixiemedia.co.uk/"
         />
+        -->
 
         <link-item
           title="Optics Warehouse"
@@ -16,7 +18,8 @@
 
         <!-- <link-item title="MyAdsEre" href="https://myadsere.com/" /> -->
 
-        <link-item title="Crowdcube" href="https://www.crowdcube.com/" />
+        <!--<link-item title="Crowdcube" href="https://www.crowdcube.com/" />-->
+
         <link-item
           title="The Board Basement"
           href="https://www.theboardbasement.com/"

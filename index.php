@@ -1,4 +1,4 @@
-<?php $version=7;?><!doctype html>
+<?php $version=8;?><!doctype html>
 <html class="no-js" lang="">
 <head>
     
@@ -13,10 +13,15 @@
     </script>
 
     <meta charset="utf-8">
-    <title>Gary Constable - Freelance Developer </title>
+    <title>Gary Constable - Frontend PHP Developer | North Devon</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="apple-touch-icon" href="icon.png">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon_io/favicon-16x16.png">
+    
+    <link rel="manifest" href="/assets/site.webmanifest">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/dist/css/dist_<?=$version;?>_.css">

@@ -90,6 +90,7 @@ export default {
             <li>Developing e-commerce systems with Prestashop / Opencart + Version control, GIT</li>
             <li>Automated Deployment with Mina</li>
             <li>Front end technologies HTML5, CSS3, Javascript / jQuery</li>
+            <li>Templating with Twig</li>
             <li>Javascript Frame works, Angular JS</li>
             <li>Google Maps / Distance Matrix Integrations</li>
             <li>Integration with various payment APIs including Stripe and Paypal</li>

@@ -162,6 +162,12 @@ export default {
           idx: 7,
           image: "/assets/images/profile_images/vue-js.png",
           description: "VueJs"
+        },
+
+        {
+          idx: 8,
+          image: "/assets/images/profile_images/php.png",
+          description: "PHP"
         }
       ]
     };
