@@ -17,7 +17,7 @@
         <a class="telme" href="tel:07702795435">07702795435</a>
         <ul class="list-inline socials">
           <li class="list-inline-item">
-            <a href="hmailto:garyconstable80@gmail.com">
+            <a href="mailto:garyconstable80@gmail.com">
               <icon :icon="['fa', 'envelope-square']"></icon>
             </a>
           </li>
