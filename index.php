@@ -1,6 +1,17 @@
-<?php $version=6;?><!doctype html>
+<?php $version=7;?><!doctype html>
 <html class="no-js" lang="">
 <head>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140401895-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-140401895-1');
+    </script>
+
     <meta charset="utf-8">
     <title>Gary Constable - Freelance Developer </title>
     <meta name="description" content="">
@@ -12,14 +23,17 @@
 </head>
 <body>
     <div id="app">
+        <sidenav></sidenav>
         <contact></contact>
-        <div class="container">
-            <div class="row">
-                <sidebar></sidebar>
-                <main-content></main-content>
+        <div class="the-page">
+            <div class="container">
+                <div class="row">
+                    <sidebar></sidebar>
+                    <main-content></main-content>
+                </div>
             </div>
+            <main-footer></main-footer>
         </div>
-        <main-footer></main-footer>
     </div>
     <script src="/assets/dist/js/dist_<?=$version;?>_.js"></script>
 </body>

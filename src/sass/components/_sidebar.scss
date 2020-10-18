@@ -1,63 +1,77 @@
-.sidebar{
-    padding-top: 100px;
+.person-img {
+  border: solid 1px;
+  width: 160px;
+  height: 160px;
+  border-radius: 100%;
+  margin: 7px 0 20px;
+  display: block;
+  background: url(/assets/images/me.jpeg) no-repeat 50% 50% / 100%;
+  max-width: 100%;
+}
 
-    h3, p{
-        margin: 0 0 0 0;
+.sidebar {
+  padding-top: 100px;
+  position: relative;
+  z-index: 1;
+
+  h3,
+  p {
+    margin: 0 0 0 0;
+  }
+
+  h3 {
+    font-weight: 100;
+    text-transform: uppercase;
+
+    span {
+      @include tablet {
+        display: block;
+      }
     }
+  }
 
-    h3{
-        font-weight: 100;
-        text-transform: uppercase;
+  .name-title {
+    font-weight: 900;
+    font-size: 1.5rem;
 
-        span{
-            @include tablet {
-                display: block;
-            }
-        }
+    @include tablet_wide {
+      font-size: 2rem;
     }
+  }
 
-    .name-title{
-        font-weight: 900;
-        font-size: 1.5rem;
-
-        @include tablet_wide {
-            font-size: 2.0rem
-        }
+  .list-inline {
+    a {
+      font-size: 22px;
     }
+  }
 
-    .list-inline{
-        a{
-            font-size: 22px;
-        }
+  .list-inline-item {
+    margin-right: 0;
+  }
+
+  .affix-first {
+    position: relative;
+    top: -38px;
+  }
+
+  .vue-affix {
+    width: 100% !important;
+
+    @include tablet {
+      width: unset !important;
     }
+  }
 
-    .list-inline-item{
-        margin-right: 0;
+  .affix {
+    max-width: 220px;
+    width: 100% !important;
+
+    @media (max-width: 767px) {
+      position: static !important;
     }
+  }
 
-    .affix-first{
-        position: relative;
-        top: -38px;
-    }
-
-    .vue-affix{
-        width: 100% !important;
-
-        @include tablet{
-            width: unset !important;
-        }
-    }
-
-    .affix{
-        max-width: 220px;
-        width: 100% !important;
-
-        @media (max-width: 767px) {
-            position: static !important;
-        }
-    }
-
-    .affix-bottom {
-        max-width: 220px;
-    }
+  .affix-bottom {
+    max-width: 220px;
+  }
 }

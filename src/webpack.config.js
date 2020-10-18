@@ -1,77 +1,77 @@
-var path = require('path');
-var webpack = require('webpack');
-var version = 6;
+var path = require("path");
+var webpack = require("webpack");
+const VueLoaderPlugin = require("vue-loader/lib/plugin");
+var version = 7;
 
 module.exports = {
-  entry: [
-    './js/main.js',
-    './sass/app.scss'
-  ],
+  entry: ["./js/main.js", "./sass/app.scss"],
   output: {
-    path: path.resolve(__dirname, '../assets/dist'),
-    publicPath: '/assets/dist/',
-    filename: 'js/dist_' + version +'_.js'
+    path: path.resolve(__dirname, "../assets/dist"),
+    publicPath: "/assets/dist/",
+    filename: "js/dist_" + version + "_.js"
   },
   module: {
     rules: [
-
       {
         test: /\.scss$/,
         use: [
           {
-            loader: 'file-loader',
+            loader: "file-loader",
             options: {
-              name: 'css/dist_' + version +'_.css',
+              name: "css/dist_" + version + "_.css"
             }
           },
           {
-            loader: 'extract-loader'
+            loader: "extract-loader"
           },
           {
-            loader: 'css-loader?-url'
+            loader: "css-loader?-url"
           },
           {
-            loader: 'postcss-loader'
+            loader: "postcss-loader"
           },
           {
-            loader: 'sass-loader'
+            loader: "sass-loader"
           }
         ]
       },
 
       {
-        test: /\.css$/,
-        use: [
-          'vue-style-loader',
-          'css-loader'
-        ],
-      }, {
         test: /\.vue$/,
-        loader: 'vue-loader',
-        options: {
-          loaders: {}
-          // other vue-loader options go here
-        }
+        loader: "vue-loader"
       },
+
       {
-        test: /\.js$/,
-        loader: 'babel-loader',
-        exclude: /node_modules/
+        test: /\.css$/,
+        use: ["vue-style-loader", "css-loader"]
       },
+
       {
         test: /\.(png|jpg|gif|svg)$/,
-        loader: 'file-loader',
+        loader: "file-loader",
         options: {
-          name: '[name].[ext]?[hash]'
+          name: "[name].[ext]?[hash]"
+        }
+      },
+
+      {
+        test: /\.js$/,
+        loader: "babel-loader",
+        exclude: /(node_modules|bower_components)/,
+
+        options: {
+          babelrc: false,
+          presets: ["@babel/preset-env"]
         }
       }
     ]
   },
+
   resolve: {
     alias: {
-      'vue$': 'vue/dist/vue.esm.js'
+      vue$: "vue/dist/vue.esm.js"
     },
-    extensions: ['*', '.js', '.vue', '.json']
+    extensions: ["*", ".js", ".vue", ".json"]
   },
   devServer: {
     historyApiFallback: true,
@@ -81,15 +81,19 @@ module.exports = {
   performance: {
     hints: false
   },
-  devtool: '#eval-source-map'
-}
+  devtool: "#eval-source-map"
+};
 
-if (process.env.NODE_ENV === 'production') {
-  module.exports.devtool = '#source-map'
+module.exports.plugins = (module.exports.plugins || []).concat([
+  new VueLoaderPlugin()
+]);
+
+if (process.env.NODE_ENV === "production") {
+  module.exports.devtool = "#source-map";
   // http://vue-loader.vuejs.org/en/workflow/production.html
   module.exports.plugins = (module.exports.plugins || []).concat([
     new webpack.DefinePlugin({
-      'process.env': {
+      "process.env": {
         NODE_ENV: '"production"'
       }
     }),
@@ -102,5 +106,5 @@ if (process.env.NODE_ENV === 'production') {
     new webpack.LoaderOptionsPlugin({
       minimize: true
     })
-  ])
+  ]);
 }

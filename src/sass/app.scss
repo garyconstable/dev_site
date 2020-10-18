@@ -5,6 +5,7 @@
 @import "partials/breakpoints";
 @import "partials/fonts";
 @import "partials/body";
+@import "partials/print";
 @import "partials/spacing";
 
 /** Components **/
@@ -15,6 +16,6 @@
 @import "components/main";
 @import "components/reveal";
 @import "components/sidebar";
+@import "components/sidenav";
 @import "components/skills";
 @import "components/work";
-

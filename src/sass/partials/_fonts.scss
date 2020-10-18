@@ -1,26 +1,36 @@
-
-p{
-    font-weight: 300;
-    font-family: $open;
-    color: darken(white, 20%);
-    font-size: 14px;
+p {
+  font-weight: 300;
+  font-family: $open;
+  color: darken(white, 20%);
+  font-size: 14px;
 }
 
-h1, h2, h3, h4, h5{
-    text-transform: uppercase;
-    font-weight: 100;
+ul {
+  font-weight: 300;
+  font-family: $open;
+  color: darken(white, 20%);
+  font-size: 14px;
 }
 
-.bold-title{
-    font-weight: 900;
-    margin-bottom: 20px;
-    letter-spacing: -3px;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-transform: uppercase;
+  font-weight: 100;
 }
 
-.display-4{
-    font-size: 2.0rem;
+.bold-title {
+  font-weight: 900;
+  margin-bottom: 20px;
+  letter-spacing: -3px;
+}
 
-    @include tablet{
-        font-size: 2.5rem;
-    }
+.display-4 {
+  font-size: 2rem;
+
+  @include tablet {
+    font-size: 2.5rem;
+  }
 }

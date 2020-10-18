@@ -1,11 +1,16 @@
-.main-content{
-    @media(min-width: 768px){
-        padding-top: 100px;
-    }
+.main-content {
+  @media (min-width: 768px) {
+    padding-top: 100px;
+  }
 
-    h1{
-        //font-size: 1.5rem;
-        text-transform: uppercase;
-        //font-weight: 900;
-    }
+  h1 {
+    //font-size: 1.5rem;
+    text-transform: uppercase;
+    //font-weight: 900;
+  }
+}
+
+.the-page {
+  position: relative;
+  z-index: 99;
 }

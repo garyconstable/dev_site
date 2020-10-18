@@ -1,0 +1,19 @@
+@media print {
+  .reveal-content {
+    height: auto !important;
+  }
+  .the-work {
+    display: none !important;
+  }
+  .sidebar {
+    .affix {
+      top: 150px !important;
+    }
+    .person-img {
+      display: none !important;
+    }
+    a {
+      text-decoration: none !important;
+    }
+  }
+}
