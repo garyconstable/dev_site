@@ -11,7 +11,11 @@
         <!-- section -->
         <h3 class="name-title"><span>Gary</span>Constable</h3>
         <p>Web developer</p>
-        <ul class="list-inline">
+        <a class="mailme" href="mailto:garyconstable80@gmail.com"
+          >garyconstable80@gmail.com</a
+        >
+        <a class="telme" href="tel:07702795435">07702795435</a>
+        <ul class="list-inline socials">
           <li class="list-inline-item">
             <a href="hmailto:garyconstable80@gmail.com">
               <icon :icon="['fa', 'envelope-square']"></icon>

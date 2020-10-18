@@ -2,6 +2,8 @@
   .reveal-content {
     height: auto !important;
   }
+  .links,
+  .skills,
   .the-work {
     display: none !important;
   }
@@ -15,5 +17,24 @@
     a {
       text-decoration: none !important;
     }
+  }
+  * {
+    color: black !important;
+  }
+  .name-title,
+  .bold-title {
+    letter-spacing: normal !important;
+    font-weight: 500 !important;
+  }
+  .mailme {
+    display: block !important;
+  }
+
+  .telme {
+    display: block !important;
+  }
+
+  .socials {
+    display: none !important;
   }
 }
