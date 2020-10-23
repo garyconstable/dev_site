@@ -2,7 +2,7 @@ const VueLoaderPlugin = require("vue-loader/lib/plugin");
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const path = require("path");
 const webpack = require("webpack");
-const version = 13;
+const version = 14;
 
 module.exports = {
   entry: ["./js/main.js", "./sass/app.scss"],
@@ -28,9 +28,11 @@ module.exports = {
           {
             loader: "css-loader?-url"
           },
+          /*
           {
             loader: "postcss-loader"
           },
+          */
           {
             loader: "sass-loader"
           }

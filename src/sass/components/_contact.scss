@@ -81,14 +81,16 @@
         text-transform: uppercase;
       }
 
+      $pink: #e91e63;
+
       .btn-info {
-        background: $grey;
-        border: solid 1px $grey;
-        text-transform: uppercase;
+        text-transform: uppercase !important;
+        background-color: $pink;
+        border-color: $pink;
 
         &:hover {
-          background: darken($grey, 50%);
-          border: solid 1px $white;
+          background: darken($pink, 50%);
+          border-color: darken($pink, 30%);
         }
       }
     }
@@ -100,5 +102,18 @@
 
   .vm--container {
     pointer-events: all;
+  }
+}
+
+$pink: #e91e63;
+
+.btn-info {
+  text-transform: uppercase !important;
+  background-color: $pink;
+  border-color: $pink;
+
+  &:hover {
+    background: darken($pink, 50%);
+    border-color: darken($pink, 30%);
   }
 }
