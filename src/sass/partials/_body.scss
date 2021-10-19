@@ -1,8 +1,7 @@
 body{
-    background: -webkit-gradient(linear,left bottom,right top,from(#000),to(#203145));
-    background: linear-gradient(to right top,#000,#203145);
-    min-height: 100vh;
-
-    color: $white;
-    font-family: $popins;
+  background: -webkit-gradient(linear,left bottom,right top,from(#000),to(#203145));
+  background: linear-gradient(to right top,#000,#203145);
+  min-height: 100vh;
+  color: $white;
+  font-family: $popins;
 }

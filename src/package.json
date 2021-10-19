@@ -1,16 +1,14 @@
 {
-  "name": "bbc_homepage",
-  "description": "A Vue.js project",
+  "name": "CV_Landing_Page",
+  "description": "A CV Landing Page",
   "version": "1.0.0",
   "author": "Gary Constable <garyconstable80@gmail.com>",
-  "license": "MIT",
+  "license": "NONE",
   "private": true,
   "scripts": {
-    "dev2": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
-    "build2": "cross-env NODE_ENV=production webpack --progress --hide-modules",
-    "dev": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --mode development --progress --hide-modules --config=webpack.config.js",
-    "prod": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --mode production --progress --hide-modules --config=webpack.config.js",
-    "watch": "npm run dev -- --watch"
+    "dev": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --config=webpack.config.js",
+    "prod": "cross-env NODE_ENV=production webpack",
+    "watch": "cross-env NODE_ENV=development webpack --watch"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.1",
@@ -24,6 +22,8 @@
     "vue-affix": "^0.5.2",
     "vue-carousel": "^0.18.0",
     "vue-js-modal": "^2.0.0-rc.6",
+    "watch": "^1.0.2",
+    "webpack-merge": "^5.8.0",
     "websocket-extensions": "^0.1.4"
   },
   "browserslist": [
@@ -49,12 +49,14 @@
     "node-sass": "^4.14.1",
     "popper.js": "^1.16.1",
     "postcss-loader": "^3.0.0",
-    "sass-loader": "^7.0.0",
+    "sass-loader": "^10.1.1",
+    "speed-measure-webpack-plugin": "^1.5.0",
     "uglifyjs-webpack-plugin": "^2.2.0",
     "vue": "^2.6.12",
     "vue-loader": "^15.9.3",
     "vue-template-compiler": "^2.6.12",
-    "webpack": "^4.27.0",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^4.9.1",
     "webpack-dev-server": ">=3.1.11"
   }
 }
