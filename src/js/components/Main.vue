@@ -85,7 +85,7 @@
     <div class="row work-examples-print">
       <div class="col-12">
 
-        <h1 class="mt-4 bold-title display-4">My Magento learning.</h1>
+        <h1 class="mt-4 bold-title display-4">My Magento learning</h1>
 
         <ul>
           <li>
