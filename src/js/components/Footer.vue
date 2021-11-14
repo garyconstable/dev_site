@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="footer-text">&copy; 2020 Gary Constable</div>
+                    <div class="footer-text">&copy; 2021 Gary Constable</div>
                 </div>
             </div>
         </div>

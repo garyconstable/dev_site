@@ -5,30 +5,146 @@
       <div class="col-12">
         <h1 class="bold-title display-4">About me</h1>
         <p>
-          Welcome to my website, I'm Gary a Website Developer (soon to be) based
+          Welcome to my website, I'm Gary a magento 2 Website Developer based
           in North, Devon. Throughout my career I have worked with some top
-          agencies gaining a wide range of experience development skills.
+          agencies gaining a wide range of experience and development skills.
         </p>
 
         <p>
-          I would describe myself as a fronend php developer, who is happy
-          working with poular content management systems such as Workpress or
+          I would describe myself as a frontend php developer, who is happy
+          working with Magento 2 and other popular content management systems such as Wordpress or
           Craft
         </p>
 
         <p>
-          Happiest when im handed a beautiful PSD, I make bespoke websites and
-          add new features to a variety of popular Content Management Systems
-          and E-commerce platforms.
+          Happiest when im handed a beautiful PSD, I make bespoke themes, pages and websites.
+          I can also write extensions to customise magento 2.
         </p>
 
-        <p>
-          Here is a litte more about me...
-        </p>
       </div>
     </div>
+
+
+    <div class="row work-examples-print">
+      <div class="col-12">
+
+        <h1 class="mt-4 bold-title display-4">I'm fluent in</h1>
+
+        <ul>
+          <li>
+            Magento 2 - Configuration, Frontend, Themes, templates, xml & Extensions.
+          </li>
+          <li>
+            HTML & CSS (SASS)
+          </li>
+          <li>
+            jQuery, with the odd splash of VUE
+          </li>
+          <li>
+            PHP
+          </li>
+          <li>
+            MYSQL
+          </li>
+        </ul>
+
+      </div>
+    </div>
+
+
+    <div class="row work-examples-print">
+      <div class="col-12">
+
+        <h1 class="mt-4 bold-title display-4">I can also</h1>
+
+        <ul>
+          <li>
+            Work with Gulp or Webpack
+          </li>
+          <li>
+            Setup a basic Apache or NGINX Environment
+          </li>
+          <li>
+            Use and Administrate Linux
+          </li>
+          <li>
+            Setup sites on and use Magento 2 Cloud
+          </li>
+          <li>
+            Solve Problems
+          </li>
+          <li>
+            Write queries for and use MYSQL
+          </li>
+        </ul>
+
+      </div>
+    </div>
+
+
+    <div class="row work-examples-print">
+      <div class="col-12">
+
+        <h1 class="mt-4 bold-title display-4">My Magento learning.</h1>
+
+        <ul>
+          <li>
+            Magento 2 Fundamentals
+          </li>
+          <li>
+            Magento 2 Cloud Fundamentals
+          </li>
+          <li>
+            Business Practitioner - AD0-E708 (Need to book re-test)
+          </li>
+          <li>
+            Front-End Developer - AD0-E701 (Hope to start in next couple of months)
+          </li>
+        </ul>
+
+      </div>
+    </div>
+
+
+
+    <div class="row work-examples-print">
+      <div class="col-12">
+
+        <h1 class="mt-4 bold-title display-4">Work examples</h1>
+
+        <ul>
+          <li>
+            <a href="https://garyconstable.dev/">https://garyconstable.dev/</a>
+          </li>
+          <li>
+            <a rel="nofollow" href="https://hiddendisabilitiesstore.com/">https://hiddendisabilitiesstore.com/</a>
+          </li>
+          <li>
+            <a rel="nofollow" href="https://www.opticswarehouse.co.uk/">https://www.opticswarehouse.co.uk/</a>
+          </li>
+          <li>
+            <a rel="nofollow" href="https://www.greenfibres.com/">https://www.greenfibres.com/</a>
+          </li>
+          <li>
+            <a rel="nofollow" href="https://activecentres.org/">https://activecentres.org/</a>
+          </li>
+          <li>
+            <a rel="nofollow" href="https://www.screeneurope.com/">https://www.screeneurope.com/</a>
+          </li>
+          <li>
+            <a rel="nofollow" href="https://www.abundanceandhealth.co.uk/">https://www.abundanceandhealth.co.uk/</a>
+          </li>
+          <li>
+            <a rel="nofollow" href="https://www.bite-back.com/">https://www.bite-back.com/</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+
+
     <!-- section -->
-    <work />
+    <!-- <work /> -->
     <!-- section -->
     <history />
     <!-- section -->

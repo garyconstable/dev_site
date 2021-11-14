@@ -17,14 +17,14 @@ h2,
 h3,
 h4,
 h5 {
-  text-transform: uppercase;
+  text-transform: none;
   font-weight: 100;
 }
 
 .bold-title {
-  font-weight: 900;
+  font-weight: 500;
   margin-bottom: 20px;
-  letter-spacing: -3px;
+  //letter-spacing: -3px;
 }
 
 .display-4 {

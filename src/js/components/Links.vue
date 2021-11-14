@@ -2,19 +2,28 @@
   <div class="links mt-2">
     <reveal title="Examples" active="">
       <template v-slot:content>
-        <link-item title="Blake &amp; White" href="/blake" />
 
-        <!--
         <link-item
-          title="Flyte So Fancy"
-          href="http://flyteso.pixiemedia.co.uk/"
+          title="Hidden Disabilities"
+          href="https://hiddendisabilitiesstore.com/"
         />
-        -->
 
         <link-item
           title="Optics Warehouse"
           href="https://www.opticswarehouse.co.uk/"
         />
+
+        <link-item
+          title="Greenfibres"
+          href="https://www.greenfibres.com/"
+        />
+
+        <!--
+        <link-item
+          title="Blake &amp; White"
+          href="/blake"
+        />
+        -->
 
         <!-- <link-item title="MyAdsEre" href="https://myadsere.com/" /> -->
 
@@ -29,9 +38,15 @@
         <link-item title="Violet Grey" href="https://violetgrey.co.uk/" />
         -->
 
-        <link-item title="Circadian" href="https://activecentres.org/" />
+        <link-item
+          title="Circadian"
+          href="https://activecentres.org/"
+        />
 
-        <link-item title="Screen Europe" href="https://www.screeneurope.com/" />
+        <link-item
+          title="Screen Europe"
+          href="https://www.screeneurope.com/"
+        />
 
         <link-item
           title="Abundance and Health"

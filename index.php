@@ -1,4 +1,4 @@
-<?php $version=15;?><!doctype html>
+<?php $version=16;?><!doctype html>
 <html class="no-js" lang="en">
 <head>
     
@@ -17,7 +17,7 @@
     </script>
 
     <meta charset="utf-8">
-    <title>Gary Constable - Frontend PHP Developer | North Devon</title>
+    <title>Gary Constable - Magento (Adobe Commerce) & Frontend PHP Web developer | North Devon (UK)</title>
     <meta name="description" content="Welcome to my website, I'm Gary a 
     Website Developer based in North, Devon. Happiest when im handed a beautiful PSD, 
     I make bespoke websites and add new features to a variety of popular Content Management 
@@ -34,8 +34,8 @@
 </head>
 <body>
     <div id="app">
-        <sidenav></sidenav>
-        <contact></contact>
+        <!--<sidenav></sidenav>
+        <contact></contact>-->
         <div class="the-page">
             <div class="container">
                 <div class="row">

@@ -1,6 +1,6 @@
 <template>
   <div class="mt-5">
-    <h4 class="bold-title display-4">History</h4>
+    <h4 class="bold-title display-4">Work history</h4>
     <div v-for="item in items" :key="item.idx" class="row history-item">
       <div class="col-lg-4 mt-3">
         <h5 class="title" v-html="item.title"></h5>
@@ -24,12 +24,13 @@ export default {
           idx: 0,
           title: "Magento 2 Developer, Pixie Media",
           dateString: "Feb 2020 — Present",
-          description: `<p>As a magento 2 developer I mainly work with the frontend developing:</p> 
+          description: `<p>As a magento 2 developer I mainly work with the frontend developing:</p>
           <ul>
           <li>Themes</li>
           <li>Extensions</li>
-          <li>Bugfixing &amp; customizing a number of Magento stores.</li>
-          <li>PHP, CSS & jQuery</li>
+          <li>Bug fixing &amp; customizing a number of Magento 2 stores.</li>
+          <li>Adobe Commerce - Cloud.</li>
+          <li>PHP, CSS, jQuery, XML</li>
           </ul>`
         },
         {
@@ -51,7 +52,6 @@ export default {
             <ul>
             <li>Magento 2</li>
             <li>Craft CMS</li>
-            <li>Python Scripting</li>
             <li>HTML & CSS</li>
             <li>jQuery</li>
             <li>VueJs</li>
@@ -63,9 +63,8 @@ export default {
           title: `PHP Developer,<br><small>Bigwave media</small>`,
           dateString: "Sep 2017 — Nov 2018",
           description: `<p>As a senior developer / team leader the work at Bigwave media would include:</p>
-            <ul> 
+            <ul>
             <li>Wordpress, theme and plugin development</li>
-            <li>Joomla Development (Maintaining legacy sites)</li>
             <li>Vue Js</li>
             <li>Project Estimation</li>
             <li>Scrum Story Pointing</li>
@@ -91,7 +90,7 @@ export default {
             <li>Automated Deployment with Mina</li>
             <li>Front end technologies HTML5, CSS3, Javascript / jQuery</li>
             <li>Templating with Twig</li>
-            <li>Javascript Frame works, Angular JS</li>
+            <li>Javascript Frame works, Angular JS (Version 1)</li>
             <li>Google Maps / Distance Matrix Integrations</li>
             <li>Integration with various payment APIs including Stripe and Paypal</li>
             <li>An understanding of search engine optimisation</li>
@@ -107,7 +106,7 @@ export default {
           dateString: "Apr 2012 — Jul 2014",
           description: `<p>As a developer at Ab my duties would include:</p>
           <ul>
-          <li>Frontend devlopment</li>
+          <li>Frontend & PHP Web devlopment</li>
           <li>Wesbite development with MODX and custom inhouse CMS</li>
           <li>PSD to HTML</li>
           </ul>
