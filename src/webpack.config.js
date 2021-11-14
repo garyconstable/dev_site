@@ -6,7 +6,7 @@ const webpack = require("webpack");
 const merge = require("webpack-merge");
 const smp = new SpeedMeasurePlugin();
 
-const version = 16;
+const version = 17;
 
 const commonConfig = {
   entry: ["./js/main.js", "./sass/app.scss"],
