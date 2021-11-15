@@ -95,10 +95,7 @@
             Magento 2 Cloud Fundamentals
           </li>
           <li>
-            Business Practitioner - AD0-E708 (Need to book re-test)
-          </li>
-          <li>
-            Front-End Developer - AD0-E701 (Hope to start in next couple of months)
+            Business Practitioner - AD0-E708 (Currently studying for.)
           </li>
         </ul>
 
