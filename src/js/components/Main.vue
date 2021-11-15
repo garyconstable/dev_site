@@ -114,9 +114,6 @@
 
         <ul>
           <li>
-            <a href="https://garyconstable.dev/">https://garyconstable.dev/</a>
-          </li>
-          <li>
             <a rel="nofollow" href="https://hiddendisabilitiesstore.com/">https://hiddendisabilitiesstore.com/</a>
           </li>
           <li>
@@ -136,6 +133,9 @@
           </li>
           <li>
             <a rel="nofollow" href="https://www.bite-back.com/">https://www.bite-back.com/</a>
+          </li>
+          <li>
+            <a href="https://garyconstable.dev/">https://garyconstable.dev/</a>
           </li>
         </ul>
 
